@@ -1,7 +1,6 @@
 .top-buttons {
     display: flex;
     flex-direction: row;
-    
 }
 
 .product-container {
@@ -30,7 +29,7 @@
     font-size: smaller;
 }
 
-.button:hover {
+.button:hover, .large-cat-button:hover {
     cursor: pointer;
     background-color: lightgray;
 }
@@ -42,4 +41,36 @@ body {
 h1 {
     color: blue;
     margin: 0px;
+}
+
+.large-cat {
+    display: flex;
+    flex-grow: 1;
+    background-image: url("https://placekitten.com/200/200");
+    height: 500px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.large-cat-header {
+    margin-top: 70px;
+    color: white;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.large-cat-subtext {
+    color: white;
+    margin-top: 10px;
+}
+
+.large-cat-button {
+    color: blue;
+    margin-top: 30px;
+    font-weight: bold;
+    background-color: white;
+    padding: 10px;
+    font-size: 60%;
+    border-radius: 5px;
 }
